@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAS Portal Quick Launcher</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Modal Structure */
+
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+      }
+
+      h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #2f5876;
+      }
+
+      a:link,
+      a:visited {
+        color: #000000;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 18px;
+      }
+
+      .flex-container {
+        
+        border-spacing: 10in;
+        padding: 10px 22px;
+      }
+
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        padding-top: 3%;
+        
+      }
+
+      .flex:hover {
+        opacity: 0.4;
+        color: #2f5876;
+      }
+
+      .flex .fa {
+        font-size: 40px;
+        color: #2f5876;
+      }
+
+      .myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:7px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#0e0202;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+  padding:9px ;
+  width: 90%;
+  text-align: center;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+  
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color:rgb(24, 74, 211);
+  
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img class="logo-icon" src="images/logo.png" />SAS Portal
+        <span class="version">(Beta)</span>
+      </h1>
+    </div>
+   
+    <div class="modal-icons">
+      <div class="flex-container">
+          <div class="flex">
+          <a href="https://thepipe.sjrb.ca/docs/DOC-93500" target="_blank"
+           class="myButton">Duty Roster  
+          </a>
+        </div>
+        <div class="flex">
+            <a href="https://thepipe.sjrb.ca/docs/DOC-79941" target="_blank"
+            class="myButton">Service Activation Status
+           </a>
+        </div>
+        <div class="flex">
+            <a href="https://apps.powerapps.com/play/7dfc276c-1340-4707-87e6-8c4888a1652a?tenantId=8b30192e-1388-4ed6-8208-e35dd72ad2ad&source=portal&screenColor=rgba(243%2C%20138%2C%20122%2C%201" target="_blank"
+            class="myButton" >FYI Links
+           </a>
+        </div>
+        
+        <div class="flex">
+            <a href="https://web.powerapps.com/webplayer/app?tenantId=8b30192e-1388-4ed6-8208-e35dd72ad2ad&source=businessAppDiscovery&appId=%2fproviders%2fMicrosoft.PowerApps%2fapps%2f07fd8468-01ee-437b-a595-3f6c41c90e54" target="_blank"
+            class="myButton">Channel lookup
+           </a>
+        </div>
+        <div class="flex">
+            <a href="https://web.powerapps.com/webplayer/app?tenantId=8b30192e-1388-4ed6-8208-e35dd72ad2ad&source=businessAppDiscovery&appId=%2fproviders%2fMicrosoft.PowerApps%2fapps%2fa9620a8f-33b1-4f23-8aaa-740d7029ee5e" target="_blank"
+            class="myButton">Contact List
+           </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
